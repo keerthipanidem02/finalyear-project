@@ -14,10 +14,25 @@ def man():
 @app.route('/predict', methods=['POST'])
 def home():
     features=['Crop_Year', 'Rain_Fall', 'Temperature', 'Area', 'Humidity', 'N', 'P',
-       'K', 'ANANTAPUR', 'CHITTOOR', 'kharif', 'rabi', 'summer', 'whole year',
-       'Banana', 'Dry chillies', 'Gram', 'Groundnut', 'Horse-gram', 'Jowar',
-       'Linseed', 'Maize', 'Moong(Green Gram)', 'Onion', 'Ragi', 'Rice',
-       'Sesamum', 'Sugarcane', 'Sunflower', 'Urad', 'Wheat', 'Andhra Pradesh']
+       'K', 'ANANTAPUR', 'CHITTOOR', 'EAST GODAVARI', 'GUNTUR', 'KADAPA',
+       'KRISHNA', 'KURNOOL', 'PRAKASAM', 'SPSR NELLORE', 'SRIKAKULAM',
+       'VISAKHAPATANAM', 'VIZIANAGARAM', 'WEST GODAVARI', 'Autumn', 'Kharif',
+       'Rabi', 'Summer', 'Whole Year', 'Winter', 'Arecanut', 'Arhar/Tur',
+       'Bajra', 'Banana', 'Beans & Mutter(Vegetable)', 'Bhindi',
+       'Bottle Gourd', 'Brinjal', 'Cabbage', 'Cashewnut', 'Castor seed',
+       'Citrus Fruit', 'Coconut ', 'Coriander', 'Cotton(lint)',
+       'Cowpea(Lobia)', 'Cucumber', 'Dry chillies', 'Dry ginger', 'Garlic',
+       'Ginger', 'Gram', 'Grapes', 'Groundnut', 'Horse-gram', 'Jowar', 'Korra',
+       'Lemon', 'Linseed', 'Maize', 'Mango', 'Masoor', 'Mesta',
+       'Moong(Green Gram)', 'Niger seed', 'Onion', 'Orange',
+       'Other  Rabi pulses', 'Other Fresh Fruits', 'Other Kharif pulses',
+       'Other Vegetables', 'Papaya', 'Peas  (vegetable)', 'Pome Fruit',
+       'Pome Granet', 'Potato', 'Ragi', 'Rapeseed &Mustard', 'Rice',
+       'Safflower', 'Samai', 'Sannhamp', 'Sapota', 'Sesamum', 'Small millets',
+       'Soyabean', 'Sugarcane', 'Sunflower', 'Sweet potato', 'Tapioca',
+       'Tobacco', 'Tomato', 'Turmeric', 'Urad', 'Varagu', 'Wheat',
+       'other fibres', 'other misc. pulses', 'other oilseeds',
+       'Andhra Pradesh']
     l=[0 for i in range(len(features))]
     xp=pd.DataFrame(columns=features)
     xp.loc[0]=l
