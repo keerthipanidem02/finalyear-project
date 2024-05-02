@@ -9,18 +9,29 @@
         <form method="POST", action="{{url_for('home')}}">
             <table>
            <b>
-            <tr><td>Nitrogen</td><td><input type="text", name='Nitrogen', placeholder="Nitrogen" style="height:30px;border-radius:10%;"></td></tr>
-            <tr><td>Phosporus</td><td><input type="text", name='Phosporus', placeholder="Phosporus" style="height:30px;border-radius:10%;"></td></tr>
-            <tr><td>Potassium</td><td><input type="text", name='Potassium', placeholder="Potassium" style="height:30px;border-radius:10%;"></td></tr>
-            <tr><td>Temperature</td><td><input type="text", name='Temperature', placeholder="Temperature" style="height:30px;border-radius:10%;"></td></tr>
+            <tr><td>Nitrogen</td><td><input type="text", name='Nitrogen', placeholder="Nitrogen ppm" style="height:30px;border-radius:10%;"></td></tr>
+            <tr><td>Phosporus</td><td><input type="text", name='Phosporus', placeholder="Phosporus ppm" style="height:30px;border-radius:10%;"></td></tr>
+            <tr><td>Potassium</td><td><input type="text", name='Potassium', placeholder="Potassium ppm" style="height:30px;border-radius:10%;"></td></tr>
+            <tr><td>Temperature</td><td><input type="text", name='Temperature', placeholder="Temperature degrees" style="height:30px;border-radius:10%;"></td></tr>
             <tr><td>Humidity</td><td><input type="text", name='Humidity', placeholder="Humidity" style="height:30px;border-radius:10%;"></td></tr>
-            <tr><td>Area</td><td><input type="text", name='Area', placeholder="Area" style="height:30px;border-radius:10%;"></td></tr>
+            <tr><td>Area</td><td><input type="text", name='Area', placeholder="Area hectare" style="height:30px;border-radius:10%;"></td></tr>
             <tr><td>crop_year</td><td><input type="text", name='crop_year', placeholder="crop_year" style="height:30px;border-radius:10%;"></td></tr>
-            <tr><td>Rain_fall</td><td><input type="text", name='Rain_fall', placeholder="Rain_fall" style="height:30px;border-radius:10%;"></td></tr>
+            <tr><td>Rain_fall</td><td><input type="text", name='Rain_fall', placeholder="Rain_fall mm" style="height:30px;border-radius:10%;"></td></tr>
             <tr><td><label for="districts">district</label></td><td><input list="districts" ,id="district" ,type="text", name='district', placeholder="district" style="height:30px;border-radius:10%;">
                 <datalist id="districts">
                   <option value="chittoor">
                   <option value="anantapur">
+                    <option value="EAST GODAVARI">
+                    <option value="GUNTUR">
+                    <option value="KADAPA">
+                    <option value="KRISHNA">
+                    <option value="KURNOOL">
+                    <option value="PRAKASAM">
+                    <option value="SPSR NELLORE">
+                    <option value="SRIKAKULAM">
+                    <option value="VISAKHAPATANAM">
+                    <option value="VIZIANAGARAM">
+                    <option value="WEST GODAVARI">
                 </datalist></td></tr>
                 
             <tr><td><label for="crop_names">crop_name</label></td><td><input list="crop_names" ,id="crop_name" ,type="text", name='crop_name', placeholder="crop_name" style="height:30px;border-radius:10%;">
@@ -47,10 +58,12 @@
             
             <tr><td><label for="seasons">season</label></td><td><input list="seasons" ,id="season",type="text", name='season', placeholder="season" style="height:30px;border-radius:10%;"></td></tr>
             <datalist id="seasons">
-                <option value="kharif">
-                <option value="rabi">
-                <option value="summer">
-                <option value="whole year">
+                <option value="Kharif">
+                <option value="Rabi">
+                <option value="Summer">
+                <option value="Whole Year">
+                  <option value="Winter">
+                    <option value="Autumn">
               </datalist></td></tr>
         </b>
             </table><br><br>
